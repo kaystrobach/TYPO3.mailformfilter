@@ -1,0 +1,18 @@
+tt_content.mailform.20.stdWrap {
+    postUserFunc = KayStrobach\Mailformfilter\UserFunc\MailFormFilter->preUserFunc
+    postUserFunc {
+        filterAddress = TEXT
+        filterAddress.value = {$plugin.tx_mailfilter.filterAddress}
+
+        bodytext = TEXT
+        bodytext.field = bodytext
+
+        recipient = TEXT
+        recipient.field = subheader
+
+        messages {
+            mailpartNotAllowed = TEXT
+            mailpartNotAllowed.value = kann keine E-Mails empfangen. Bitte nutzen Sie eine andere Kontaktmöglichkeit. Als Redakteur können Sie im Backend eine andere Empfänger E-Mailadresse angeben.
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "KayStrobach/Mailformfilter",
+  "type": "typo3-cms-extension",
+  "description": "Filters Adresses from Mailforms",
+  "homepage": "",
+  "license": ["GPL-2.0+"],
+  "version": "0.0.0",
+  "require": {
+    "typo3/cms-core": ">=7.0.0,<8.0"
+  },
+  "support": {
+  },
+  "autoload": {
+    "psr-4": {
+      "KayStrobach\\Mailformfilter\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KayStrobach\\Mailformfilter\\": "Tests/",
+      "TYPO3\\CMS\\Core\\Tests\\": "../../typo3/sysext/core/Tests/",
+      "TYPO3\\CMS\\Fluid\\Tests\\": "../../typo3/sysext/fluid/Tests/"
+    }
+  }
+}

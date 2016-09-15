@@ -1,0 +1,6 @@
+plugin {
+    tx_mailfilter {
+        # cat=Mailfilter,advanced/default/a; type=string; label=Addresses to filter
+        filterAddress = @example.com
+    }
+}
